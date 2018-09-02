@@ -1,0 +1,20 @@
+.home-page-header {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255)
+}
+
+body {
+  background-color: rgb(12, 12, 12);
+}
+
+.home-page-header {
+  font-size: 55px;
+  font-weight: 999;
+  line-height: 1;
+  text-align: left;
+}
+
+.home-page-border-line {
+  border: 10px solid green;
+  width:
+}
