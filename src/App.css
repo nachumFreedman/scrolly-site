@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  font-size: 100vh;
 }
 
 .App-logo {
@@ -28,6 +27,3 @@
   to { transform: rotate(360deg); }
 }
 
-.nig {
-font-size: 100vh;  
-}

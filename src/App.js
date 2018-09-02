@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Home from './Home';
 
 class App extends Component {
   
@@ -38,10 +39,9 @@ class App extends Component {
 
   
   render() {
-    console.log(this.state.pageNumber)
     return (
       <div className="App">
-        
+        <Home/>
       </div>
     );
   }
