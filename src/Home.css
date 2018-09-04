@@ -1,6 +1,7 @@
 .home-page-header {
   font-family: 'Montserrat', sans-serif;
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
+  font-weight: extra-bold;
 }
 
 body {
@@ -8,13 +9,36 @@ body {
 }
 
 .home-page-header {
-  font-size: 55px;
+  display: block;
+  font-size: 5rem;
   font-weight: 999;
   line-height: 1;
   text-align: left;
+  text-size-adjust: 100%;
+  margin-left: 10vw;
+  margin-bottom: 5vh;
+}
+
+.home-page-spaceman-container {
+  position: fixed;
+  width: 85%;
+  left: 5%;
+}
+
+.home-page-spaceman-img {
+  position: fixed;
+  top: 10vh;
+  right: 10vw;
 }
 
 .home-page-border-line {
-  border: 10px solid green;
-  width:
+  height: 1.5px;
+  max-width: 100%;
+  background-color: grey;
 }
+
+.home-page-hireus-button {
+  position: fixed;
+  margin-left: 11vw;
+}
+

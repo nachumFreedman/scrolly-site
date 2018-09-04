@@ -9,10 +9,14 @@ class Home extends Component {
   render() {
     return (
       <div className="home-page">
-        <h1 className='home-page-header'>Your next interactive experince</h1>
-        <Button></Button>
-        <img src={Spaceman} alt='Welcome'/>
-        <div className='-home-page-border-line'/>
+        <div className='home-page-tophalf'>
+          <h1 className='home-page-header'>Your next <br/> interactive <br/> experince</h1>
+          <Button className='home-page-hireus-button'/>
+          <div className='home-page-spaceman-container'>
+            <img src={Spaceman} alt='Welcome' className='home-page-spaceman-img'/>
+            <div className='home-page-border-line'/>
+          </div>
+        </div>
       </div>
     );
   }

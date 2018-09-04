@@ -17,7 +17,6 @@ span.title {
 .basicBox, .swiggleBox, .checkBox {
   width: 130px;
   height: 65px;
-  margin: 15px auto;
   color: #4274D3;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.15rem;
@@ -33,6 +32,7 @@ svg {
   top: 0;
   left: 0;
 }
+
 svg rect, svg path, svg polyline {
   fill: none;
   stroke: #4274D3;
@@ -46,37 +46,25 @@ svg rect, svg path, svg polyline {
 /* Basic Box */
 svg rect {
   stroke-dasharray: 400, 0;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .basicBox:hover svg rect {
   stroke-width: 3;
   stroke-dasharray: 35, 245;
   stroke-dashoffset: 38;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 /* Swiggle Box */
 svg path {
   stroke-dasharray: 265, 0;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .swiggleBox:hover svg path {
   stroke-width: 3;
   stroke-dasharray: 0, 350;
   stroke-dashoffset: 20;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /* Check Box */
@@ -85,30 +73,20 @@ svg path {
 }
 .checkBox svg {
   /* Presentation Purposes */
-  margin-left: -10px;
+
 }
 .checkBox svg rect, .checkBox svg polyline {
   fill: none;
   stroke: #4274D3;
   stroke-width: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .checkBox:hover svg rect {
   stroke-width: 2;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
 }
 .checkBox:hover svg polyline {
   stroke-width: 2;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .checkBox svg .button {
   stroke-dasharray: 400px, 0;
