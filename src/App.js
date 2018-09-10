@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './Home';
+import Header from './Header';
+import About from './About';
+
+const views = [Home, About];
 
 class App extends Component {
   
@@ -24,10 +28,10 @@ class App extends Component {
     
     if (!this.state.blockScroll) {
       Math.abs(distance) > 10 ? this.setState({
-        pageNumber: this.state.pageNumber + direction,
+        pageNumber: (this.state.pageNumber + direction + views.length) % views.length,
         blockScroll: true,
       }, () => {
-        setTimeout(()=>{this.setState({blockScroll: false})}, 1500)
+        setTimeout(()=>{this.setState({blockScroll: false})}, 1000)
       }
       ) : null
     }
@@ -37,11 +41,17 @@ class App extends Component {
     });
   };
 
-  
   render() {
+
+    const View = views[this.state.pageNumber % views.length]
+
     return (
       <div className="App">
-        <Home/>
+        <Header selectedPage={this.state.pageNumber}
+                onSelectPageNumber={(pageNumber)=>this.setState({pageNumber})}
+                currentActivePage={this.state.pageNumber}/>
+        { this.state.pageNumer } 
+        <View />
       </div>
     );
   }

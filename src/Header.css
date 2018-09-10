@@ -1,0 +1,26 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  border-left: 1px solid grey;  
+  margin-left: 5vw;
+  margin-top: 13vh;
+  color: white;
+  position: fixed;
+}
+
+.header-ul {
+  user-select: none;
+}
+
+.header-ul li {
+  z-index: 5;
+  text-align: left;
+  padding: 22vh 0 0 0;
+  margin-left: -27px;
+  margin-top: -13vh;
+}
+
+.header-ul li span {
+  cursor: pointer;
+}

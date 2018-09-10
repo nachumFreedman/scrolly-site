@@ -1,7 +1,18 @@
+.home-page {
+  position: fixed;
+  animation: fadein 2s;
+
+
+}
+
 .home-page-header {
   font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
   font-weight: extra-bold;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -17,24 +28,28 @@ body {
   text-size-adjust: 100%;
   margin-left: 10vw;
   margin-bottom: 5vh;
+  user-select: none;
+}
+
+.home-page-tophalf {
+  position: absolute;
+  top: 5vh;
 }
 
 .home-page-spaceman-container {
-  position: fixed;
-  width: 85%;
-  left: 5%;
+  margin-top: 5vh;
+  width: 88vw;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.home-page-spaceman-img {
-  position: fixed;
-  top: 10vh;
-  right: 10vw;
-}
 
 .home-page-border-line {
-  height: 1.5px;
-  max-width: 100%;
+  height: 2px;
+  width: 77vw;
+  margin-top: -2px;
   background-color: grey;
+  margin-left: 10vw;
 }
 
 .home-page-hireus-button {
